@@ -1,82 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <EntitiesDescriptor Name="urn:mace:shibboleth:testshib:two"
-                    xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
-    >
-	<EntityDescriptor entityID="http://localhost:8080/idp-metadata/">
-		<IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="true">
-            <KeyDescriptor use="signing">
-                <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
-                    <dsig:X509Data>
-                        <dsig:X509Certificate>
-                            MIIB9DCCAV0CBElvalIwDQYJKoZIhvcNAQEEBQAwQTELMAkGA1UEBhMCVVMxDjAMBgNVBAoTBUpC
-b3NzMQ4wDAYDVQQLEwVKQm9zczESMBAGA1UEAxMJamJpZCB0ZXN0MB4XDTA5MDExNTE2NTQ0MloX
-DTA5MDQxNTE2NTQ0MlowQTELMAkGA1UEBhMCVVMxDjAMBgNVBAoTBUpCb3NzMQ4wDAYDVQQLEwVK
-Qm9zczESMBAGA1UEAxMJamJpZCB0ZXN0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDsqJo7
-vBYZ9+tlxfItxjezJntNZUTnAHNTTz8O+CVO+9JB6i2YkMoFN5rw3wp/xIqp0EA0fx2dhPTBFeR5
-0BD73tjDBYqLBPP4Qdi9/AFZBpXcEG7aQtV73D6HKRc+YQQhDNddt+gG33GLmnCisOyMklE6J8rn
-55S2MgraOQbMowIDAQABMA0GCSqGSIb3DQEBBAUAA4GBAFthl5SFim6NXCsRzOl8VHDdrIskk9i5
-71zQLEI1BW24IiDtAgQBY6YXb1kkEJ6GmlW44IWIBZLTRerYXAivdJTdW+9D+HCapByQeNfj7HnQ
-lTz3UNkn6k2iagzYdJdnhgRZGpRWjf1t4skoJjvfL3HwkOWhSFKundbKcZSZwifI
-                        </dsig:X509Certificate>
-                    </dsig:X509Data>
-                </dsig:KeyInfo>
-		    </KeyDescriptor>
-		    <KeyDescriptor use="encryption">
-                <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
-                    <dsig:X509Data>
-                        <dsig:X509Certificate>
-                            MIIB9DCCAV0CBElvalIwDQYJKoZIhvcNAQEEBQAwQTELMAkGA1UEBhMCVVMxDjAMBgNVBAoTBUpC
-b3NzMQ4wDAYDVQQLEwVKQm9zczESMBAGA1UEAxMJamJpZCB0ZXN0MB4XDTA5MDExNTE2NTQ0MloX
-DTA5MDQxNTE2NTQ0MlowQTELMAkGA1UEBhMCVVMxDjAMBgNVBAoTBUpCb3NzMQ4wDAYDVQQLEwVK
-Qm9zczESMBAGA1UEAxMJamJpZCB0ZXN0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDsqJo7
-vBYZ9+tlxfItxjezJntNZUTnAHNTTz8O+CVO+9JB6i2YkMoFN5rw3wp/xIqp0EA0fx2dhPTBFeR5
-0BD73tjDBYqLBPP4Qdi9/AFZBpXcEG7aQtV73D6HKRc+YQQhDNddt+gG33GLmnCisOyMklE6J8rn
-55S2MgraOQbMowIDAQABMA0GCSqGSIb3DQEBBAUAA4GBAFthl5SFim6NXCsRzOl8VHDdrIskk9i5
-71zQLEI1BW24IiDtAgQBY6YXb1kkEJ6GmlW44IWIBZLTRerYXAivdJTdW+9D+HCapByQeNfj7HnQ
-lTz3UNkn6k2iagzYdJdnhgRZGpRWjf1t4skoJjvfL3HwkOWhSFKundbKcZSZwifI
-                        </dsig:X509Certificate>
-                    </dsig:X509Data>
-                </dsig:KeyInfo>
-		    </KeyDescriptor>
-            <KeyDescriptor>
-                <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
-                    <dsig:X509Data>
-                        <dsig:X509Certificate>
-                            MIIB9DCCAV0CBElvalIwDQYJKoZIhvcNAQEEBQAwQTELMAkGA1UEBhMCVVMxDjAMBgNVBAoTBUpC
-b3NzMQ4wDAYDVQQLEwVKQm9zczESMBAGA1UEAxMJamJpZCB0ZXN0MB4XDTA5MDExNTE2NTQ0MloX
-DTA5MDQxNTE2NTQ0MlowQTELMAkGA1UEBhMCVVMxDjAMBgNVBAoTBUpCb3NzMQ4wDAYDVQQLEwVK
-Qm9zczESMBAGA1UEAxMJamJpZCB0ZXN0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDsqJo7
-vBYZ9+tlxfItxjezJntNZUTnAHNTTz8O+CVO+9JB6i2YkMoFN5rw3wp/xIqp0EA0fx2dhPTBFeR5
-0BD73tjDBYqLBPP4Qdi9/AFZBpXcEG7aQtV73D6HKRc+YQQhDNddt+gG33GLmnCisOyMklE6J8rn
-55S2MgraOQbMowIDAQABMA0GCSqGSIb3DQEBBAUAA4GBAFthl5SFim6NXCsRzOl8VHDdrIskk9i5
-71zQLEI1BW24IiDtAgQBY6YXb1kkEJ6GmlW44IWIBZLTRerYXAivdJTdW+9D+HCapByQeNfj7HnQ
-lTz3UNkn6k2iagzYdJdnhgRZGpRWjf1t4skoJjvfL3HwkOWhSFKundbKcZSZwifI
-                        </dsig:X509Certificate>
-                    </dsig:X509Data>
-                </dsig:KeyInfo>
-		    </KeyDescriptor>
-			<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient
-			</NameIDFormat>
-			<SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest"
-				Location="http://localhost:8080/idp-metadata/" />
-			<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-				Location="http://localhost:8080/idp-metadata/" />
-			<SingleSignOnService
-				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-				Location="http://localhost:8080/idp-metadata" />
-		</IDPSSODescriptor>
-		<Organization>
-			<OrganizationName xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
-				xml:lang="en">JBoss</OrganizationName>
-			<OrganizationDisplayName xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
-				xml:lang="en">JBoss by Red Hat</OrganizationDisplayName>
-			<OrganizationURL xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
-				xml:lang="en">http://www.jboss.org</OrganizationURL>
-		</Organization>
-		<ContactPerson contactType="technical">
-			<GivenName>The</GivenName>
-			<SurName>Admin</SurName>
-			<EmailAddress>admin@mycompany.com</EmailAddress>
-		</ContactPerson>
-	</EntityDescriptor>
+                    xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://ckirkendall-dev-ed.my.salesforce.com" validUntil="2026-08-11T18:39:34.074Z" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+   <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:KeyDescriptor use="signing">
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>MIIErDCCA5SgAwIBAgIOAVZ65iauAAAAAHk+ixowDQYJKoZIhvcNAQELBQAwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzExQXVnMjAxNl8xODM4MzgxGDAWBgNVBAsMDzAwRDQxMDAwMDAwTU9LQjEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0EwHhcNMTYwODExMTgzODM4WhcNMTcwODExMTIwMDAwWjCBkDEoMCYGA1UEAwwfU2VsZlNpZ25lZENlcnRfMTFBdWcyMDE2XzE4MzgzODEYMBYGA1UECwwPMDBENDEwMDAwMDBNT0tCMRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI98r9eAMcgTzLEAQJvgtG0wXftbs9mqKG88baKAtYjfPcPG2BDCZ/7/ktSGga9pZWcnH8b3wbGuYkewMwBhmBPzOaL98r/d5zIsH6FlQN6Yc4ozGxobbBeI+cL8B6KT2mWUBo9PqaP7PY2IXlJZoAr1gCgI2bG8ZXTJwhXAR1OUT7vneCM3QtaJY2TIlj8hgE+ZhOfV5ig6lkQvS19Q5GAfuE3U75ZPEzpRmxdOo+t2RATc9DaiYy9QSDeWxqfQreJlQSKMvjxGut5Imjeo8XkDjaiS8fAaqv0ti8guBFSqbqugSM1a4FeD5ZHY9C3kgPcFlK7G+zU52QFLTMUkDvMCAwEAAaOCAQAwgf0wHQYDVR0OBBYEFHlfxZJliCgE8vtHdmYyuxeHZ4C5MA8GA1UdEwEB/wQFMAMBAf8wgcoGA1UdIwSBwjCBv4AUeV/FkmWIKATy+0d2ZjK7F4dngLmhgZakgZMwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzExQXVnMjAxNl8xODM4MzgxGDAWBgNVBAsMDzAwRDQxMDAwMDAwTU9LQjEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgFWeuYmrgAAAAB5PosaMA0GCSqGSIb3DQEBCwUAA4IBAQAs5Y4YYoZ686ZTS7FdYEWIyuN2XzJ1AA55xlnVY4P8vPMtlqH4j4XFJhSQl2DT3qI24q/GD5UEbg44yyjtMrcPzOQC8DswbWzwuEyVFbqOuOKAioPuYqQtiIm3YpWdBfClSjxbC3sz97sJPVV+uS5ggtxdAO6Z0krmsEjXXvV6r4LNSo8RCED0jSkcIY/2dhDMVar/f96hv9qWdwc/zcDShH4g0RxIE6rK5LazS9a/s8o8u0CBdpuUpYmZqqhyCc6BKmi4xWP+cUHjs73r1SfPdzLQ0ApgMMCJ4fpjobdcvc4khMc0qdCEwL01D3y4hIeRfd1wcJLzWsgnJEzhy9i1</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ckirkendall-dev-ed.my.salesforce.com/idp/endpoint/HttpPost"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ckirkendall-dev-ed.my.salesforce.com/idp/endpoint/HttpRedirect"/>
+   </md:IDPSSODescriptor>
+</md:EntityDescriptor>
 </EntitiesDescriptor>
