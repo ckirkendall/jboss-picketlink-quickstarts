@@ -1,11 +1,11 @@
 <PicketLink xmlns="urn:picketlink:identity-federation:config:2.1">
 	<PicketLinkIDP xmlns="urn:picketlink:identity-federation:config:2.1"
-                   SupportsSignatures="true"
-                   Encrypt="true"
+                   SupportsSignatures="false"
+                   Encrypt="false"
                    AttributeManager="org.picketlink.identity.federation.bindings.wildfly.idp.UndertowAttributeManager"
                    RoleGenerator="org.picketlink.identity.federation.bindings.wildfly.idp.UndertowRoleGenerator">
         <Trust>
-			<Domains>localhost,jboss.com,jboss.org,amazonaws.com</Domains>
+			<Domains>localhost,immut-saml-test,jboss.com,jboss.org,amazonaws.com</Domains>
 		</Trust>
 		<KeyProvider
 			ClassName="org.picketlink.identity.federation.core.impl.KeyStoreKeyManager">

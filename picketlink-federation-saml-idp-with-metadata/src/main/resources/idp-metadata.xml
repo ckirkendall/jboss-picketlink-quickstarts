@@ -55,7 +55,7 @@ lTz3UNkn6k2iagzYdJdnhgRZGpRWjf1t4skoJjvfL3HwkOWhSFKundbKcZSZwifI
                     </dsig:X509Data>
                 </dsig:KeyInfo>
 		    </KeyDescriptor>
-			<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient
+			<NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified
 			</NameIDFormat>
 			<SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest"
 				Location="http://localhost:8080/idp-metadata/" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <EntitiesDescriptor Name="urn:mace:shibboleth:testshib:two"
                     xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://ckirkendall-dev-ed.my.salesforce.com" validUntil="2026-08-11T18:39:34.074Z" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="http://localhost:8080/idp-metadata" validUntil="2026-08-11T18:39:34.074Z" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:KeyDescriptor use="signing">
          <ds:KeyInfo>
@@ -11,8 +11,9 @@
          </ds:KeyInfo>
       </md:KeyDescriptor>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
-      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ckirkendall-dev-ed.my.salesforce.com/idp/endpoint/HttpPost"/>
-      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ckirkendall-dev-ed.my.salesforce.com/idp/endpoint/HttpRedirect"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="http://localhost:8080/idp-metadata/" />
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/idp-metadata/" />
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost:8080/idp-metadata" />
    </md:IDPSSODescriptor>
 </md:EntityDescriptor>
 </EntitiesDescriptor>

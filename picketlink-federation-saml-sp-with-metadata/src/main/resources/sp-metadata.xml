@@ -1,5 +1,5 @@
 <EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="immut-saml-test">
-    <SPSSODescriptor AuthnRequestsSigned="false"
+    <SPSSODescriptor AuthnRequestsSigned="true"
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol http://schemas.xmlsoap.org/ws/2003/07/secext">
         <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/sales-metadata/"/>
         <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified
