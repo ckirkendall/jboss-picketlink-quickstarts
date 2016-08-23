@@ -4,8 +4,9 @@
                    Encrypt="false"
                    AttributeManager="org.picketlink.identity.federation.bindings.wildfly.idp.UndertowAttributeManager"
                    RoleGenerator="org.picketlink.identity.federation.bindings.wildfly.idp.UndertowRoleGenerator">
-        <Trust>
-			<Domains>localhost,immut-saml-test,jboss.com,jboss.org,amazonaws.com</Domains>
+		<IdentityURL>http://127.0.0.1:8080/idp-metadata/</IdentityURL>
+		<Trust>
+			<Domains>127.0.0.1,localhost,cenx.com,cenx-conduit,immut-saml-test,jboss.com,jboss.org,amazonaws.com</Domains>
 		</Trust>
 		<KeyProvider
 			ClassName="org.picketlink.identity.federation.core.impl.KeyStoreKeyManager">
@@ -20,9 +21,9 @@
 			<ValidatingAlias Key="localhost" Value="servercert" />
 			<ValidatingAlias Key="127.0.0.1" Value="servercert" />
 		</KeyProvider>
-        <MetaDataProvider ClassName="org.picketlink.identity.federation.core.saml.md.providers.FileBasedEntitiesMetadataProvider">
-            <Option Key="FileName" Value="/WEB-INF/classes/sp-metadata.xml"/>
-        </MetaDataProvider>
+		<MetaDataProvider ClassName="org.picketlink.identity.federation.core.saml.md.providers.FileBasedEntitiesMetadataProvider">
+			<Option Key="FileName" Value="/WEB-INF/classes/sp-metadata.xml"/>
+		</MetaDataProvider>
 	</PicketLinkIDP>
 	<Handlers xmlns="urn:picketlink:identity-federation:handler:config:2.1">
 		<Handler
@@ -35,7 +36,7 @@
 			class="org.picketlink.identity.federation.web.handlers.saml2.RolesGenerationHandler" />
 		<Handler
 			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2EncryptionHandler" />
-      	<Handler
-            class="org.picketlink.identity.federation.web.handlers.saml2.SAML2SignatureValidationHandler" />
+		<Handler
+		    class="org.picketlink.identity.federation.web.handlers.saml2.SAML2SignatureValidationHandler" />
 	</Handlers>
 </PicketLink>
