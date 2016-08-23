@@ -2,7 +2,6 @@
 <EntitiesDescriptor Name="urn:mace:shibboleth:testshib:two" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" >
 	<EntityDescriptor entityID="http://127.0.0.1:8080/idp-metadata/">
 		<IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
-		    </KeyDescriptor>
 			<NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified
 			</NameIDFormat>
 			<SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest"
