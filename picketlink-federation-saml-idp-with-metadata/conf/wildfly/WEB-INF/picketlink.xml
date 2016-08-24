@@ -4,9 +4,9 @@
                    Encrypt="false"
                    AttributeManager="org.picketlink.identity.federation.bindings.wildfly.idp.UndertowAttributeManager"
                    RoleGenerator="org.picketlink.identity.federation.bindings.wildfly.idp.UndertowRoleGenerator">
-		<IdentityURL>http://127.0.0.1:8080/idp-metadata/</IdentityURL>
+		<IdentityURL>${idp.url::http://localhost:8080/idp/}</IdentityURL>
 		<Trust>
-			<Domains>127.0.0.1,localhost,cenx.com,cenx-conduit,immut-saml-test,jboss.com,jboss.org,amazonaws.com</Domains>
+			<Domains>${trusted.domains::localhost,cenx-conduit,cenx-apollo,cenx-babelfish}</Domains>
 		</Trust>
 		<KeyProvider
 			ClassName="org.picketlink.identity.federation.core.impl.KeyStoreKeyManager">
