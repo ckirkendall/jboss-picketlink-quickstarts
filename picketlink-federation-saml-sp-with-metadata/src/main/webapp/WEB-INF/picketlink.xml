@@ -1,6 +1,6 @@
 <PicketLink xmlns="urn:picketlink:identity-federation:config:2.1">
 	<PicketLinkSP xmlns="urn:picketlink:identity-federation:config:2.1"
-		ServerEnvironment="tomcat" BindingType="POST" SupportsSignatures="false">
+		ServerEnvironment="tomcat" BindingType="POST" SupportsSignatures="false" Encrypt="false">
 
         <MetaDataProvider ClassName="org.picketlink.identity.federation.core.saml.md.providers.FileBasedEntitiesMetadataProvider">
             <Option Key="FileName" Value="/WEB-INF/classes/idp-metadata.xml"/>
